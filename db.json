@@ -1,0 +1,65 @@
+{
+  "meetups": [
+    {
+      "id": 1,
+      "title": "React",
+      "desc": "webpack, react"
+    },
+    {
+      "id": 2,
+      "title": ".Net CORE",
+      "desc": "webpack, c++"
+    },
+    {
+      "id": 3,
+      "title": "Java",
+      "desc": "webpack, cobol, java, angular"
+    },
+    {
+      "id": 4,
+      "title": "C++",
+      "desc": "node, c++, react, java"
+    },
+    {
+      "id": 5,
+      "title": "Cobol",
+      "desc": "webpack, cobol, go"
+    },
+    {
+      "id": 6,
+      "title": "RestFullApi",
+      "desc": "node, angular, react"
+    },
+    {
+      "id": 7,
+      "title": "Go",
+      "desc": "go, react, java, cobol"
+    },
+    {
+      "id": 8,
+      "title": "Node.js",
+      "desc": "c++, angular,.net, webpack"
+    }
+  ],
+  "user": [
+    {
+      "id": 1,
+      "firstname": "chris",
+      "lastname": "plesniak",
+      "email": "krzysztof.plesniak@tieto.com"
+    },
+    {
+      "id": 2,
+      "firstname": "jack",
+      "lastname": "smith",
+      "email": "jack.smith@tieto.com"
+    },
+    {
+      "id": 3,
+      "firstname": "ralph",
+      "lastname": "weststeeel",
+      "email": "ralph.weststeeel@tieto.com"
+    }
+  ],
+  "logs": [{}, {}, {}]
+}
