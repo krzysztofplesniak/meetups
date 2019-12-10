@@ -67,7 +67,7 @@ const MeetupList = () => {
             //<Loading />
           ) : (
             <>
-              {meetups ? (
+              {meetups.length > 0 ? (
                 <Grid container direction='row' justify='center' alignItems='center' spacing={1}>
                   <Meetups meetups={meetups} />
                 </Grid>

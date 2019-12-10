@@ -8,11 +8,9 @@ const override = css`
     top: 200px;
 `;
 
-export const Loading = () => {
-    
-  return (
+export const Loading = () =>     
+  
     <div className='sweet-loading'>
       <MoonLoader css={override} sizeUnit={'px'} size={150} color={'#123abc'} />
-    </div>
-  );
-};
+    </div>;
+  

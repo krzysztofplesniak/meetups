@@ -11,8 +11,8 @@ import CardMedia from '@material-ui/core/CardMedia';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import ShareIcon from '@material-ui/icons/Share';
 import IconButton from '@material-ui/core/IconButton';
-
 import { makeStyles } from '@material-ui/core/styles';
+import PropTypes from 'prop-types';
 
 const useStyles = makeStyles({
   card: {
@@ -31,7 +31,7 @@ const useStyles = makeStyles({
   },
 });
 
-export const Meetup = ({ meetup }) => {
+export const MeetupItem = ({ meetup }) => {
   const classes = useStyles();
 
   return (
@@ -65,3 +65,8 @@ export const Meetup = ({ meetup }) => {
     </>
   );
 };
+
+
+MeetupItem.propTypes = {
+  meetup:  PropTypes.object.isRequired 
+}
