@@ -24,11 +24,11 @@ const MeetupList = () => {
 
     const response = await fetch(api_URL);
     const meetupsList = await response.json();
-    
+
     const filterMeetupsList = meetupsList.filter((meetup) => {
-      return  meetup.desc.includes(searchMeetup);
+      return meetup.desc.includes(searchMeetup);
     });
-      
+
     setMeetups(filterMeetupsList);
     setLoading(false);
   };
@@ -60,19 +60,22 @@ const MeetupList = () => {
           <Typography component='p'>
             You can choose what you want: search meetups, share and mark meetup "Like", filter by topic, search by date, so on and so forth
           </Typography>
-          <TextField className='searchTextField' margin='normal' placeholder='Search for Meetup'
-          onChange={onChangeSearchInput} value={searchMeetup} />
-          {loading ? (
-            null
+          <TextField
+            className='searchTextField'
+            margin='normal'
+            placeholder='Search for Meetup'
+            onChange={onChangeSearchInput}
+            value={searchMeetup}
+          />
+          {loading ? null : (
             //<Loading />
-          ) : (
             <>
               {meetups.length > 0 ? (
                 <Grid container direction='row' justify='center' alignItems='center' spacing={1}>
-                  <Meetups meetups={meetups} meet='1'/>
+                  <Meetups meetups={meetups} />
                 </Grid>
               ) : (
-                <ErrorLog componet='MeetupList.js' errorMessage='Brak zaczytanych meetupów z backendu' />
+                <ErrorLog component='MeetupList.js' errorMessage='Brak zaczytanych meetupów z backendu' />
               )}
             </>
           )}

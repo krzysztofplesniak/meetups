@@ -9,7 +9,7 @@ const Meetups = ({ meetups = null }) => {
       {meetups ? (
         meetups.map((meetup) => <MeetupItem key={meetup.id} meetup={meetup} />)
       ) : (
-        <ErrorLog componet='Meetups.js' errorMessage='Brak elementow do wyświetlenia w componencie Meetups.js' />
+        <ErrorLog component='Meetups.js' errorMessage='Brak elementow do wyświetlenia w componencie Meetups.js' />
       )}
     </>
   );
@@ -22,6 +22,5 @@ Meetups.propTypes = {
 }
 
 Meetups.defaultProps = {
-  meetups:  null,
-  meet:  2
+  meetups:  null
 }
