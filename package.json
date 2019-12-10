@@ -16,7 +16,8 @@
     "concurrently": "^5.0.0",
     "contentful": "^7.10.0",
     "json-server": "^0.15.1",
-    "react-spinners": "^0.6.1"
+    "react-spinners": "^0.6.1",
+    "prop-types": "^15.7.0"
   },
   "scripts": {
     "start": "react-scripts start",

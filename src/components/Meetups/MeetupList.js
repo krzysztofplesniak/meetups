@@ -69,7 +69,7 @@ const MeetupList = () => {
             <>
               {meetups.length > 0 ? (
                 <Grid container direction='row' justify='center' alignItems='center' spacing={1}>
-                  <Meetups meetups={meetups} />
+                  <Meetups meetups={meetups} meet='1'/>
                 </Grid>
               ) : (
                 <ErrorLog componet='MeetupList.js' errorMessage='Brak zaczytanych meetupów z backendu' />

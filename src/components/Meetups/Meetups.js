@@ -18,5 +18,10 @@ const Meetups = ({ meetups = null }) => {
 export default Meetups;
 
 Meetups.propTypes = {
-  meetups:  PropTypes.array.isRequired 
+  meetups: PropTypes.array 
+}
+
+Meetups.defaultProps = {
+  meetups:  null,
+  meet:  2
 }
